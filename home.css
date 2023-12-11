@@ -1,0 +1,62 @@
+#content{
+    background-image: url('../project/bg.jpg');
+    color: white;
+    background-size: cover;
+}
+#card{
+    background-color: rgb(0, 0, 0, 0.5);
+}
+#card>a{
+    color: white;
+}
+.shop{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-between;
+}
+.sarees{
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+.sarees>img{
+    height: 25vh;
+    width: 100vw;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+
+}
+.sarees:hover{
+    background-color: rgb(180, 179, 179);
+}
+.sarees>p>button{
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 300px;
+    color: rgb(255, 255, 255);
+    background-color: #3393b6;
+    transition: all 0.3s ease-in-out;
+}
+.sarees>p>button:hover{
+    color: #3393b6;
+    background-color: rgb(255, 255, 255);
+}
+@media screen and (min-width: 600px){
+    .shop{
+        grid-template-columns: auto auto;
+    }
+    .instruments>img{
+        height: 25vh;
+        width: 50vw;    
+    }
+}
+@media screen and (min-width: 900px){
+    .shop{
+        grid-template-columns: auto auto auto;
+    }
+    .instruments>img{
+        height: 25vh;
+        width: 30vw;    
+    }
+}
